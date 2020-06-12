@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- document encoding -->
+        <theme>dark</theme>
+        <enableCategoryView>true</enableCategoryView>
+        <enableAuthorView>true</enableAuthorView>
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>AIO Report</documentTitle>
+
+		<reportName>AIO - Test Automation Run Results Report</reportName>
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline>Test Automation Run Results Report</reportHeadline>
+        <testViewChartLocation>bottom</testViewChartLocation>
+        
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+       <dateFormat>dd-MMM-yyyy</dateFormat>
+
+        <!-- global time format override -->
+        <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+
+        <scripts>
+            <![CDATA[
+	                 
+	                  $("nav .brand-logo").html("AIO");           
+	                 $("#charts-row > div:nth-child(1) > div > div.left.panel-name").html("Test Results Summary View");
+	                 $("#charts-row > div:nth-child(2) > div > div.left.panel-name").html("Test Steps Results Summary View");
+	                 $("#dashboard-view > div.charts > div.col.s12.m12.l4.fh > div > span.panel-name").html("Overall Test Run Pass Percentage");
+                     $("#nav-mobile > li:nth-child(1) > a > span").html("Autonomous Cloud Tester");  
+                     $("#test-collection > li:nth-child(2) > div.test-heading > span.test-time").hide();
+                     $("#dashboard-view > div > h5").hide();
+                     $("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > span").html("Modules");
+                     $("#controls > div > div:nth-child(2) > a").html("Modules");
+                     $("#category-view > div.subview-left.left > div > h5").html("Modules");
+                     
+                     
+                 });
+             ]]>
+        </scripts>        
+        
+        
+		<styles>
+		
+             <![CDATA[
+            .report-name {margin-left :-8px !important;}
+            .report-name {font-size: x-large !important;}
+            .report-name {font-weight: bold !important;}    
+            .report-name {color: #d69b30 !important;}
+            
+            .blue.darken-2{font-size: x-large !important;}
+            .blue.darken-2{font-weight: bold !important;}    
+            
+            .dark th, .dark .panel-name {color: #6dd8ca !important;}
+            .dark th, .dark .panel-name {font-weight: bold !important;}
+            .dark .heading{color: bisque !important;}
+            
+            .extent.default.dark.hide-overflow {font-size: large} 
+            .extent.default.hide-overflow {font-size: large} 
+            .extent.dark {font-size: large} 
+            .extent {font-size: large} 
+            
+            card-panel r{color: #6dd8ca !important;}
+            h5{font-size: 0rem; !important;}
+            a {color: #6dd8ca;}
+            
+            .side-nav i {color: #dea845 !important;}
+            .side-nav i {font-size: 25px !important;}
+            
+            .test-status{font-size: 20px!important;}
+            
+            #dashboard-view .r{color: #6dd8ca !important;}
+            #dashboard-view .r{font-size: large !important;}
+            #dashboard-view .r{font-weight: bold !important;}
+            #dashboard-view .r {text-align: center!important;}
+            
+           .category-name{color: #6dd8ca !important;}
+           
+           .text-small { font-size: 18px !important;}
+           
+           .card-panel .panel-lead {right: px !important;}
+           .card-panel .panel-lead {color: #c1c1bc !important;}
+           .card-panel .panel-lead {font-size: 17px !important;}
+           
+           
+            body.dark, .dark .collapsible-header {color: #c1c1bc !important;}
+            .dark th, .dark .panel-name {font-size: x-large;} 
+            th {font-size: large!important;}
+            .subview-left .test-name, .node-name {font-size: 18px !important;}
+            
+            .card-panel .panel-lead {left: 17px;}
+            .card-panel .panel-lead {text-align: center!important;}
+            .chip {font-size: 17px;}
+            .grey.lighten-1{}
+            
+            .test-time{font-size: 0px !important;}
+            .cyan {background-color: #2c6b73 !important;}
+            
+            
+            .grey.lighten-1{background-color: #ab7a34 !important;}
+            .start-time{background: #5e8870!important;}
+            
+            .blue.darken-3{background-color: #000000 !important;}
+            .blue.darken-3 {font-size: 0px!important;}
+            
+            .subview-left .test-name{width: 75% !important;}
+            .subview-left .test-name{word-break: break-word !important;}
+            .subview-left{width: 30%!important;}
+             nav .brand-logo{font-size: 0px!important;}
+             
+             .linked{color: #6dd8ca !important;}
+             .cyan{float: left !important;}
+            
+
+
+            
+            
+            
+}
+            
+            
+         ]]>
+		</styles>
+	
+    </configuration>
+</extentreports>

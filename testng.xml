@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" thread-count="1" parallel="tests" >
+    <!-- <test name="Firefox Test">
+        <parameter name="browser" value="Firefox"/>
+        <classes>Chrome,IE,Firefox
+            <class name="RunManager.HybridExecsuteTest"/>
+        </classes>
+    </test> -->
+    <test name="Chrome Test">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="RunManager.HybridExecuteTest"/>
+        </classes>
+    </test>
+</suite>
